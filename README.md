@@ -25,7 +25,7 @@ on Wi-Fi infrastructure.
 
 ## System Architecture
 
-![System Architecture](images/LoRa%20Emergency%20Alarm%20System%20Architecture.jpg)
+![System Architecture](images/LoRa Emergency Alarm System Architecture.jpg)
 
 ---
 
