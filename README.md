@@ -99,11 +99,11 @@ This was a solo end-to-end development project. My responsibilities included:
 
 ## Photos
 
-![Photo 1](images/P1_1.jpg)
-![Photo 2](images/P1_2.jpg)
-![Photo 3](images/P1_3.jpg)
-![Photo 4](images/P1_4.jpg)
-![Photo 5](images/P1_5.jpg)
+![Photo 1](P1_1.jpg)
+![Photo 2](P1_2.jpg)
+![Photo 3](P1_3.jpg)
+![Photo 4](P1_4.jpg)
+![Photo 5](P1_5.jpg)
 
 ---
 
