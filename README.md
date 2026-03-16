@@ -25,22 +25,13 @@ on Wi-Fi infrastructure.
 
 ## System Architecture
 
-```
-[LoRa SOS Button] ──LoRa 470MHz──► [LoRa Gateway + LCD]
-                                          │
-                                    CAT1 Cellular
-                                          │
-                                          ▼
-                                   [EMQX MQTT Broker]
-                                          │
-                                    HTTP Auth + Node.js
-                                          │
-                              ┌───────────┴───────────┐
-                              ▼                       ▼
-                       [Telegram Bot]              [SMS Service]
-```
+![System Architecture](images/LoRa%20Emergency%20Alarm%20System%20Architecture.jpg)
 
-> Photos of hardware will be added here.
+---
+
+## Communication Flow
+
+![Alarm Flow](images/LoRa%20Emergency%20Alarm%20Flow.jpg)
 
 ---
 
@@ -81,25 +72,9 @@ on Wi-Fi infrastructure.
 
 ---
 
-## Communication Flow
-
-1. User presses the SOS button
-2. Button device transmits a LoRa packet (device ID + alarm type)
-3. Gateway receives the packet and decodes it
-4. Gateway triggers local buzzer + alarm linkage output
-5. Gateway updates the LCD with alarm status
-6. Gateway publishes an MQTT message to the cloud broker (via CAT1)
-7. EMQX broker authenticates and routes the message
-8. Node.js backend receives and processes the alarm event
-9. Backend stores the event in MySQL and updates Redis
-10. Telegram Bot and SMS notification are dispatched to the user
-
----
-
 ## RF Performance
 
 - Tested with Keysight N9913A field analyzer
-- Communication range: tested in open area and multi-floor building
 - Frequency: 470 MHz, output power tuned per regulatory limit
 - Sensitivity and link budget validated before deployment
 
@@ -112,7 +87,7 @@ This was a solo end-to-end development project. My responsibilities included:
 - Hardware schematic design and PCB prototype
 - Embedded C firmware for both button device and gateway MCU
 - SX1276 LoRa driver implementation and RF parameter tuning
-- RF debugging using spectrum analyzer (Keysight N9913A)
+- RF debugging using Keysight N9913A spectrum analyzer
 - CAT1 module integration for cellular MQTT connectivity
 - EMQX broker setup with HTTP device authentication
 - Node.js backend API and alarm processing logic
@@ -124,7 +99,11 @@ This was a solo end-to-end development project. My responsibilities included:
 
 ## Photos
 
-> Hardware photos coming soon.
+![Photo 1](images/P1_1.jpg)
+![Photo 2](images/P1_2.jpg)
+![Photo 3](images/P1_3.jpg)
+![Photo 4](images/P1_4.jpg)
+![Photo 5](images/P1_5.jpg)
 
 ---
 
