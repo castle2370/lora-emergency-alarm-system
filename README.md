@@ -31,7 +31,7 @@ on Wi-Fi infrastructure.
 
 ## Communication Flow
 
-![Alarm Flow](images/LoRa%20Emergency%20Alarm%20Flow.jpg)
+![Alarm Flow](LoRa%20Emergency%20Alarm%20Flow.jpg)
 
 ---
 
